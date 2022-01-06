@@ -6,4 +6,7 @@ Feature: Test for amazon cufflinks search
     Given Open Amazon page
     When Search for cufflinks
     And Click search icon
-    Then Search result have "cufflinks"
+    And Click on the first product
+    And Click on Add to cart button
+    And Open Cart Page
+    Then Verify cart has 1 item(s)
