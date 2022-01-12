@@ -1,0 +1,25 @@
+body {
+    margin: 3px;
+    color: white;
+    font-family: "Times New Roman";
+}
+
+div.header {
+    background-color: green;
+    color: white;
+    padding-top: 20px;
+    height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+div.section {
+    background-color: khaki;
+    color: black;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    font-size: 14px;
+}
