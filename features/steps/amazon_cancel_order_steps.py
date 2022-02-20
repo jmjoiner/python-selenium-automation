@@ -13,8 +13,7 @@ def open_amazon_customer_help(context):
 @when('Look for cancel order in help search')
 def look_for_cancel_order(context):
     searchbar = context.driver.find_element(By.ID, "helpsearch")
-    searchbar.send_keys('Cancel Order')
-    searchbar.send_keys(Keys.ENTER)
+    searchbar.send_keys('Cancel Order', Keys.ENTER)
 
 
 @then('Verify Cancel order')

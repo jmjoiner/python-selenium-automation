@@ -9,3 +9,8 @@ Feature: Test for Amazon main page
   Scenario: User can see 39 footer links
     Given Open Amazon page
     Then Verify 39 links present
+
+  Scenario: Sign In page can be opened from Sign In popup
+    Given Open Amazon page
+    When CLick Sign In from popup
+    Then Verify Sign in page opened
