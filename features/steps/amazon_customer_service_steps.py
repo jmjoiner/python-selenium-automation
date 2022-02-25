@@ -11,5 +11,5 @@ def open_prime(context):
 @then('User will see {expected_count} UI elements')
 def user_interface_elements(context, expected_count):
     expected_count = int(expected_count)
-    elements_count = len(context.driver.find_elements(*ELEMENT_OPTIONS))
+    elements_count = len(context.driver.find_elements(*ELEMENT_OPTIONSgi))
     assert expected_count == elements_count, f'Expected {expected_count}, did not match {elements_count}'
