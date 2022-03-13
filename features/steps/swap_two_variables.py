@@ -5,11 +5,11 @@
 
 # code here
 
-a = int(input('Imput value a: '))
-b = int(input('Input value b: '))
+# a = int(input('Imput value a: '))
+# b = int(input('Input value b: '))
 
 # a = 5, b = 10
-print(f'a = {a}, b = {b}')
+# print(f'a = {a}, b = {b}')
 
 # O(1)
 # temp = a # 10
@@ -19,8 +19,8 @@ print(f'a = {a}, b = {b}')
 # a, b = b, a
 
 # a = 5, b = 10
-a = a + b # 5 + 10 = 15
-b = a - b # 15 - 10 = 5
-a = a - b # 10 - 5 = 5
+#a = a + b # 5 + 10 = 15
+#b = a - b # 15 - 10 = 5
+#a = a - b # 10 - 5 = 5
 
-print(f'a = {a}, b = {b}')
+#print(f'a = {a}, b = {b}')

@@ -6,16 +6,16 @@
 # 456 -> 654
 # -321 -> -123
 
-def reverse_integer(x):
-    str_x = str(x)
+# def reverse_integer(x):
+#    str_x = str(x)
 
-    if str_x[0] == '-':
-        return int('-' + str_x[:0:-1])
-    else:
-        return str_x[::-1]
+#    if str_x[0] == '-':
+#        return int('-' + str_x[:0:-1])
+#    else:
+#        return str_x[::-1]
 
 # 456 -> 654
-print(reverse_integer(456))
+# print(reverse_integer(456))
 
 # -123 -> -321
-print(reverse_integer(-123))
+# print(reverse_integer(-123))

@@ -13,27 +13,27 @@
 
 # code here
 # O(n)
-def fibonacci(n):
-    if n < 0:
-        return 'Not a valid value'
-    if n == 0:
-        return 0
-    if n == 1:
-        return [1]
-    if n == 2:
-        return [1, 1]
+#def fibonacci(n):
+#    if n < 0:
+#        return 'Not a valid value'
+#    if n == 0:
+#        return 0
+#    if n == 1:
+#        return [1]
+#    if n == 2:
+#        return [1, 1]
 
 #    fib_1 = 1
 #    fib_2 = 1
-    result = [1, 1]
-    index = 3
+#    result = [1, 1]
+#    index = 3
 
-    while index <= n:
-        result.append(result[-1] + result[-2])
+#    while index <= n:
+#        result.append(result[-1] + result[-2])
      #   fib_1, fib_2 = fib_2, fib_1 + fib_2
-        index = index + 1
+#        index = index + 1
 
-    return result
+#    return result
 
-print(fibonacci(5)) #1 1 2 3 5
-print(fibonacci(7)) #1 1 2 3 5 8 13
+# print(fibonacci(5)) #1 1 2 3 5
+# print(fibonacci(7)) #1 1 2 3 5 8 13

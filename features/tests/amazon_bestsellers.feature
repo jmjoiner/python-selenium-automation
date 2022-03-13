@@ -5,3 +5,4 @@ Feature: Test for Amazon Bestsellers Page
   Scenario: User can see Bestsellers Results
     Given Open Amazon Bestsellers Page
     Then User sees 5 subheader links
+

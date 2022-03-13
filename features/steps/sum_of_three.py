@@ -3,12 +3,12 @@
 
 
 # code here
-from random import randint
+# from random import randint
 
-random_number = randint(100, 999)
-print(f'The random number is: {random_number}')
+# random_number = randint(100, 999)
+# print(f'The random number is: {random_number}')
 
-result = 0
+# result = 0
 # Soultion A
 # O(n)
 # for digit in str(random_number):
@@ -17,9 +17,9 @@ result = 0
 # Solution B
 # O(n)
 # Random number = 321; Expected result = 6
-while random_number != 0: # 3
-    result = result + (random_number % 10) # 6
-    random_number = random_number // 10
+#while random_number != 0: # 3
+#    result = result + (random_number % 10) # 6
+#    random_number = random_number // 10
 
 
-print(f'Result {result}:')
+#print(f'Result {result}:')
