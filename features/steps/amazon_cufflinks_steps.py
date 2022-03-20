@@ -18,9 +18,9 @@ def results_have_cufflinks(context, expected_result):
     assert actual_result == expected_result, f'Error, actual {actual_result} did not match {expected_result}'
 
 
-@when('Click on the first product')
-def first_product(context):
-    context.driver.find_element(*PRODUCT_PRICE).click()
+# @when('Click on the first product')
+# def first_product(context):
+#     context.driver.find_element(*PRODUCT_PRICE).click()
 
 
 @when('Click on Add to cart button')

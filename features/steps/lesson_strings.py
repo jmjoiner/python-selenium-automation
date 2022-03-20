@@ -86,7 +86,7 @@
 #[start:stop:steps]
 
 
-string = "string"
-
-print(string[0:4:2])
+# string = "string"
+#
+# print(string[0:4:2])
 

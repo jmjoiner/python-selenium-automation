@@ -3,6 +3,8 @@ from selenium.webdriver.support import expected_conditions as EC
 from behave import given, when, then
 from time import sleep
 
+SEARCH_INPUT = (By.ID, 'twotabsearchtextbox')
+SEARCH_BTN = (By.ID, 'nav-search-submit-button')
 HAM_MENU = (By.ID, 'nav-hamburger-menu')
 FOOTER_LINKS = (By.CSS_SELECTOR, "td.navFooterDescItem a")
 SIGN_IN_BTN = (By.CSS_SELECTOR, "#nav-signin-tooltip a.nav-action-button")
@@ -10,22 +12,24 @@ BS_LINK_OPTIONS = (By.CSS_SELECTOR, "div[class*='nav-tab-all_style_zg-tabs'] a")
 
 @given('Open Amazon page')
 def open_amazon(context):
-    context.driver.get('https://www.amazon.com/')
+    context.app.main_page.open_main()
 
 
 @when('Search for {keyword}')
-def search_amazon(context, keyword):
-    context.driver.find_element(By.ID, 'twotabsearchtextbox').send_keys(keyword)
+def search_product(context, keyword):
+    context.app.header.search_product(keyword)
+    context.app.header.click_search()
 
 
 @when('Click search icon')
 def click_search_icon(context):
-    context.driver.find_element(By.ID, 'nav-search-submit-button').click()
+   context.driver.find_element(By.ID, 'nav-search-submit-button').click()
 
 
 @when('Click Orders')
 def click_orders(context):
-    context.driver.find_element(By.ID, 'nav-orders').click()
+    # context.driver.find_element(By.ID, 'nav-orders').click()
+    context.app.main_page.orders_link()
 
 
 @when('CLick Sign In from popup')

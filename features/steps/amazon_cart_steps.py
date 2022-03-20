@@ -12,6 +12,6 @@ def cart_icon_click(context):
 
 @then('Verifies that Your Amazon Cart is empty')
 def verify_amazon_cart(context):
-    context.driver.find_element(By.XPATH, "//div[@class='a-row sc-your-amazon-cart-is-empty']")
-
+    # context.driver.find_element(By.XPATH, "//div[@class='a-row sc-your-amazon-cart-is-empty']")
+    context.app.cart_page
 
