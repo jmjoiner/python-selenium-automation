@@ -18,12 +18,13 @@ def open_amazon(context):
 @when('Search for {keyword}')
 def search_product(context, keyword):
     context.app.header.search_product(keyword)
-    context.app.header.click_search()
+    # context.app.header.click_search()
 
 
 @when('Click search icon')
 def click_search_icon(context):
-   context.driver.find_element(By.ID, 'nav-search-submit-button').click()
+   # context.driver.find_element(By.ID, 'nav-search-submit-button').click()
+   context.app.header.click_search()
 
 
 @when('Click Orders')
