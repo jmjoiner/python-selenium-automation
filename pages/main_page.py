@@ -14,3 +14,6 @@ class MainPage(Page):
 
     def add_to_cart_btn(self):
         self.click(*self.ADD_TO_CART_BTN)
+
+    def open_product_page(self, code):
+        self.open_page(end_url=f'/gp/product/{code}')

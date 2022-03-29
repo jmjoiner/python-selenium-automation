@@ -14,3 +14,10 @@ def click_first_product(context):
 @then('Search results have {expected_result}')
 def verify_search_result(context, expected_result):
     context.app.search_results_page.verify_search_result(expected_result)
+
+
+@then('Verify {department} department is selected')
+def verify_department(context, department):
+    context.app.search_results_page.verify_correct_department(department)
+
+

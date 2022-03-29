@@ -14,12 +14,19 @@ BS_LINK_OPTIONS = (By.CSS_SELECTOR, "div[class*='nav-tab-all_style_zg-tabs'] a")
 def open_amazon(context):
     context.app.main_page.open_main()
 
+@given('Open product page {code}')
+def open_amazon(context, code):
+    context.app.main_page.open_product_page(code)
 
 @when('Search for {keyword}')
 def search_product(context, keyword):
     context.app.header.search_product(keyword)
-    # context.app.header.click_search()
+    context.app.header.click_search()
 
+# #@when('Search for long tube headers')
+# def search_long_tube_headers(context):
+#     context.app.header.search_product()
+#     context.app.header.click_search()
 
 @when('Click search icon')
 def click_search_icon(context):
@@ -48,6 +55,24 @@ def wait(context, sec):
 def click_best_sellers(context):
     context.driver.find_element(By.CSS_SELECTOR, "div[id='nav-xshop'] a[href*='nav_cs_bestsellers']").click()
 
+
+@when('Hover over language options')
+def hover_lang_options(context):
+    context.app.header.hover_lang_options()
+
+
+@when('Select department by alias {alias}')
+def select_department(context, alias):
+    context.app.header.select_department(alias)
+
+
+@when('Select Automotive Parts department')
+def select_automotive_parts_depart(context):
+    context.app.header.select_department('Automotive Parts & Accessories')
+
+@when('Hover over New Arrivals')
+def hover_new_arrivals(context):
+    context.app.header.hover_department_options()
 
 @then('Verify hamburger menu is present')
 def verify_ham_menu_present(context):
@@ -90,3 +115,12 @@ def verify_bestsellers_links(context):
 
     for i in range(length):
         context.driver.find_elements(*BS_LINK_OPTIONS)[i].click()
+
+
+@then('Verify Spanish option present')
+def verify_spanish_lang_present(context):
+    context.app.header.verify_spanish_lang_present()
+
+@then('Verify user can see deals')
+def verify_deals(context):
+    context.app.header.verify_deals_shown()
