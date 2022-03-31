@@ -1,4 +1,4 @@
-def AddOne(digits):
+def inc_a_num(digits):
 
     index = len(digits) - 1
 
@@ -16,7 +16,7 @@ def AddOne(digits):
 
 digits = [1, 2, 9]
 
-AddOne(digits)
+inc_a_num(digits)
 
 for digit in digits:
     print(digit, end=' ')
