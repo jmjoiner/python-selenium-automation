@@ -1,4 +1,4 @@
-# Our code grneratesa random three-digit number and has to sum up all its digits.
+# Our code grnerates a random three-digit number and has to sum up all its digits.
 # For example, if a number is 349, the code has to print the number 16, because 3 + 4 + 9 = 16.
 
 

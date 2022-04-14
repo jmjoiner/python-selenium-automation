@@ -14,7 +14,6 @@
 # test_array = [6, 3, 8, 1, 9, 2]
 # print(test_array)
 # print(selection_sort(test_array))
-from audioop import reverse
 
 
 def selection_sort(arr):
